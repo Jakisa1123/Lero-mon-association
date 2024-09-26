@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LERO MON ASSOCIATION</title>
+  <style>
+    :root {
+      --primary-color: #4CAF50;
+      --secondary-color: violet;
+      --text-color-light: #000;
+      --text-color-dark: #fff;
+      --default-bg-color: #87CEEB; /* Bleu ciel */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--default-bg-color);
+      color: var(--text-color-dark);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    h2 {
+      text-align: center;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px;
+      margin: 0;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: transparent;
+      color: white;
+      border: none;
+      padding: 1px 2px;
+      margin: 4px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: rgba(76, 175, 80, 0.1);
+      color: #45a049;
+    }
+
+    .groupbox {
+      padding: 20px;
+      max-height: 330px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      margin: 10px auto;
+      width: 92%;
+      box-sizing: border-box;
+      background-color: white;
+      color: black;
+    }
+
+    .groupbox p {
+      text-align: justify;
+      margin: 10px auto;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--secondary-color);
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+
+    h3 {
+      color: #333;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideFromLeft {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideFromRight {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideFromTop {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideFromBottom {
+      from { transform: translateY(100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .fade-in { animation: fadeIn 0.5s ease-in-out; }
+    .slide-from-left { animation: slideFromLeft 0.5s ease-in-out; }
+    .slide-from-right { animation: slideFromRight 0.5s ease-in-out; }
+    .slide-from-top { animation: slideFromTop 0.5s ease-in-out; }
+    .slide-from-bottom { animation: slideFromBottom 0.5s ease-in-out; }
+
+    /* Ajout de styles pour l'espacement */
+    .spacing {
+      margin: 20px 0; /* Espace entre les paragraphes */
+    }
+
+    /* Style pour le texte en gras */
+    .bold {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h2>LERO MON ASSOCIATION</h2>
+
+<!-- Navigation -->
+<nav>
+  <button onclick="showSection('accueil', 'slide-from-bottom')">Accueil</button>
+  <button onclick="showSection('communiques', 'slide-from-right')">Communiqués</button>
+  <button onclick="showSection('compteRendu', 'slide-from-left')">Compte rendu</button>
+  <button onclick="showSection('statut', 'slide-from-top')">Statut</button>
+  <button onclick="showSection('parametres', 'slide-from-top')">Paramètres</button>
+  <button onclick="showSection('contact', 'slide-from-bottom')">Contactez-nous</button>
+</nav>
+
+<!-- Sections de contenu -->
+<section class="groupbox" id="accueil" style="display: block;">
+  <h3 class="bold">Accueil</h3>
+  <p class="spacing" style="font-weight: bold; text-align: center;">Bienvenue dans LERO MON ASSOCIATION</p>
+  <p class="spacing">Nous sommes ravis de vous accueillir dans l'application de LERO MON ASSOCIATION, dédiée à la promotion des valeurs communautaires et au développement durable. Notre objectif est de rassembler des individus passionnés et engagés, prêts à faire la différence dans leur communauté.</p>
+  <p class="spacing" style="font-weight: bold; text-align: center;">Ce que nous faisons:</p>
+  <p class="spacing"><strong>Soutien à la Communauté :</strong></p>
+  <p class="spacing">Nous organisons des événements comme matchs, fêtes et des activités pour renforcer les liens au sein de notre communauté.</p>
+  <p class="spacing" style="font-weight: bold; text-align: center;">Ce que vous trouverez dans l'application :</p>
+  <p class="spacing"><strong>Actualités et Communiqués :</strong> Restez informé des dernières nouvelles et événements de notre association.</p>
+  <p class="spacing"><strong>Comptes Rendus : </strong> Consultez les comptes rendus des réunions et des décisions prises par l'association.</p>
+  <p class="spacing"><strong>Section Statut : </strong> Découvrez nos objectifs et notre vision pour l'avenir.</p>
+  <p class="spacing"><strong>Section Contactez-nous:</strong> Nous sommes là pour vous aider selon vos besoins. N’hésitez pas à nous faire part de vos questions, suggestions ou préoccupations, et nous nous efforcerons de vous répondre dans les plus brefs délais.</p>
+  <p class="spacing"><strong>Paramètres Personnalisés :</strong> Personnalisez votre expérience utilisateur selon vos préférences.</p>
+  <p class="spacing">Nous vous remercions de faire partie de cette belle aventure et de contribuer à l'essor de notre communauté. Ensemble, nous pouvons réaliser de grandes choses !</p>
+  <p class="spacing">Pour toute question ou suggestion, n’hésitez pas à nous contacter via la section <strong>"Contactez-nous"</strong> de l'application.</p>
+</section>
+
+<section class="groupbox" id="communiques" style="display: none;">
+  <h3 class="bold">Communiqués</h3>
+  <p>Aucun communiqué à annoncer pour ce dernier temps. Merci.</p>
+</section>
+
+<section class="groupbox" id="compteRendu" style="display: none;">
+  <h3 class="bold">Compte rendu</h3>
+  <p>Voilà le compte rendu de la dernière réunion.</p>
+</section>
+
+<section class="groupbox" id="statut" style="display: none;">
+  <h3 class="bold">Statut</h3>
+  <p>Le statut de LERO est là.</p>
+</section>
+
+<section class="groupbox" id="parametres" style="display: none;">
+  <h3 class="bold">Paramètres</h3>
+  <p>Personnalisez votre expérience en choisissant parmi différentes polices et thèmes.</p>
+  <label for="font-select">Changer la police :</label>
+  <select id="font-select" onchange="changeFont(this.value)">
+    <option value="Arial">Arial</option>
+    <option value="Times New Roman">Times New Roman</option>
+    <option value="Courier New">Courier New</option>
+  </select>
+
+  <p><label for="theme-select">Changer le thème :</label></p>
+  <select id="theme-select" onchange="changeTheme(this.value)">
+    <option value="default">Thème bleu</option>
+    <option value="dark">Sombre</option>
+  </select>
+</section>
+
+<!-- Nouvelle section Contactez-nous -->
+<section class="groupbox" id="contact" style="display: none;">
+  <h3 class="bold">Contactez-nous</h3>
+  <p>Pour toute question, suggestion ou besoin d'assistance, contactez-nous directement via WhatsApp, télégramme :</p>
+  <p><a href="https://wa.me/message/PU4FOVABQFR2E1" target="_blank">1. Le développeur de l'application.</a></p>
+  <p><a href="http://t.me/Jakisadieumerci" target="_blank">2. Le secrétaire de l'association.</a></p>
+  <p><a href="http://t.me/Jakisadieumerci" target="_blank">3. Le RP de l'association.</a></p>
+  <p><a href="http://t.me/Jakisadieumerci" target="_blank">4. Le secrétaire de l'association.</a></p>
+  <p><a href="http://t.me/Jakisadieumerci" target="_blank">5. Le secrétaire de l'association.</a></p>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+  <p>© Application développée par Jakisa Urombi Dieu merci</p>
+</div>
+
+<script>
+  function showSection(sectionId, animationClass) {
+    // Masquer toutes les sections
+    const sections = document.querySelectorAll('.groupbox');
+    sections.forEach(section => {
+      section.style.display = 'none';
+      section.classList.remove('fade-in', 'slide-from-left', 'slide-from-right', 'slide-from-top', 'slide-from-bottom');
+    });
+
+    // Afficher la section sélectionnée
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.style.display = 'block';
+
+    // Ajouter l'animation
+    selectedSection.classList.add(animationClass);
+  }
+
+  // Fonction pour changer la police
+  function changeFont(font) {
+    document.body.style.fontFamily = font;
+  }
+
+  // Fonction pour changer le thème
+  function changeTheme(theme) {
+    if (theme === 'dark') {
+      document.body.style.backgroundColor = '#333';
+      document.body.style.color = '#fff';
+    } else {
+      document.body.style.backgroundColor = '#87CEEB'; // Bleu ciel par défaut
+      document.body.style.color = '#000';
+    }
+  }
+</script>
+
+</body>
+</html>
