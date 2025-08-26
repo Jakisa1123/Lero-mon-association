@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Nom de l'Association</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="activities.html">Activités</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="#" class="active">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute pour toute question ou suggestion</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Nos coordonnées</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Adresse</h3>
+                            <p>123 Rue de l'Association<br>75000 Paris<br>France</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Téléphone</h3>
+                            <p>01 23 45 67 89</p>
+                            <p>Du lundi au vendredi, 9h-17h</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p>contact@association.fr</p>
+                            <p>Nous vous répondons sous 48h</p>
+                        </div>
+                    </div>
+                    <div class="social-contact">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h2>Envoyez-nous un message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Choisissez un sujet</option>
+                                <option value="information">Demande d'information</option>
+                                <option value="volunteer">Devenir bénévole</option>
+                                <option value="donation">Faire un don</option>
+                                <option value="partnership">Proposition de partenariat</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Je souhaite m'inscrire à la newsletter</label>
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">J'accepte la politique de confidentialité</label>
+                        </div>
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                    <div id="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Nous trouver</h2>
+            <div class="map-container" id="map-placeholder">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Carte interactive</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Questions fréquentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment devenir bénévole ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Pour devenir bénévole, vous pouvez nous contacter via le formulaire ci-dessus en sélectionnant "Devenir bénévole" comme sujet, ou venir directement à notre prochaine réunion d'information. Nous recherchons des personnes motivées, peu importe leurs compétences ou leur disponibilité.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment faire un don ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Vous pouvez faire un don financier par virement bancaire, chèque ou en ligne via notre plateforme sécurisée. Nous acceptons également les dons matériels (vêtements, nourriture, matériel) selon nos besoins actuels. Contactez-nous pour plus d'informations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous des stages ou des services civiques ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous accueillons régulièrement des stagiaires et des volontaires en service civique. Les offres disponibles sont publiées sur notre site dans la rubrique "Nous rejoindre". Vous pouvez également nous envoyer une candidature spontanée.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment devenir partenaire de l'association ?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous sommes ouverts à différentes formes de partenariats avec des entreprises, des institutions ou d'autres associations. Contactez-nous pour discuter des possibilités de collaboration qui correspondent à vos objectifs et aux nôtres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Nom de l'Association</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Association, 75000 Paris</p>
+                    <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@association.fr</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="activities.html">Activités</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nom de l'Association. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

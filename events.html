@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association - Événements</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Nom de l'Association</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="activities.html">Activités</a></li>
+                    <li><a href="#" class="active">Événements</a></li>
+                    <li><a href="gallery.html">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nos Événements</h1>
+            <p>Découvrez notre calendrier d'événements et rejoignez-nous</p>
+        </div>
+    </section>
+
+    <section class="events-calendar">
+        <div class="container">
+            <div class="calendar-filters">
+                <h2>Événements à venir</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="workshop">Ateliers</button>
+                    <button class="filter-btn" data-filter="conference">Conférences</button>
+                    <button class="filter-btn" data-filter="cultural">Culturels</button>
+                    <button class="filter-btn" data-filter="solidarity">Solidarité</button>
+                </div>
+            </div>
+
+            <div class="events-list">
+                <div class="event-item" data-category="workshop">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Mai</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Journée portes ouvertes</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Centre communautaire, 45 rue des Lilas</p>
+                            <p><i class="fas fa-clock"></i> 10h00 - 17h00</p>
+                            <p><i class="fas fa-tag"></i> Atelier, Rencontre</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Venez découvrir nos activités et rencontrer notre équipe lors de cette journée spéciale. Au programme : présentations de nos projets, ateliers participatifs, échanges avec nos bénévoles et moments conviviaux autour d'un buffet préparé par nos soins.</p>
+                            <p>Entrée libre et gratuite, ouvert à tous.</p>
+                        </div>
+                        <a href="#" class="btn register-btn" data-event="Journée portes ouvertes">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="event-item" data-category="conference">
+                    <div class="event-date">
+                        <span class="day">22</span>
+                        <span class="month">Juin</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Atelier de sensibilisation environnementale</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Salle municipale, 12 avenue du Parc</p>
+                            <p><i class="fas fa-clock"></i> 14h00 - 16h30</p>
+                            <p><i class="fas fa-tag"></i> Conférence, Environnement</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Un atelier interactif pour sensibiliser aux enjeux environnementaux locaux. Animé par des experts en écologie urbaine, cet atelier vous permettra de comprendre les défis environnementaux de notre région et d'apprendre des gestes concrets pour réduire votre impact écologique.</p>
+                            <p>Places limitées à 30 participants. Inscription obligatoire.</p>
+                        </div>
+                        <a href="#" class="btn register-btn" data-event="Atelier de sensibilisation environnementale">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="event-item" data-category="cultural">
+                    <div class="event-date">
+                        <span class="day">10</span>
+                        <span class="month">Juil</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Concert solidaire</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Théâtre municipal, 8 place de la Culture</p>
+                            <p><i class="fas fa-clock"></i> 20h00 - 23h00</p>
+                            <p><i class="fas fa-tag"></i> Concert, Culture</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Une soirée musicale exceptionnelle au profit de nos actions sociales. Plusieurs artistes locaux se produiront bénévolement pour soutenir nos projets d'aide aux personnes défavorisées.</p>
+                            <p>Tarif : 15€ (tarif réduit : 10€). L'intégralité des bénéfices sera reversée à nos programmes d'aide sociale.</p>
+                        </div>
+                        <a href="#" class="btn register-btn" data-event="Concert solidaire">Réserver</a>
+                    </div>
+                </div>
+
+                <div class="event-item" data-category="solidarity">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">Août</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Collecte alimentaire</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Supermarché Central, 56 rue du Commerce</p>
+                            <p><i class="fas fa-clock"></i> 09h00 - 19h00</p>
+                            <p><i class="fas fa-tag"></i> Solidarité, Action</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Grande collecte de denrées alimentaires non périssables et de produits d'hygiène. Ces produits seront redistribués aux familles en difficulté de notre communauté.</p>
+                            <p>Nous recherchons également des bénévoles pour nous aider à organiser cette collecte. Si vous souhaitez participer, merci de vous inscrire.</p>
+                        </div>
+                        <a href="#" class="btn register-btn" data-event="Collecte alimentaire">Participer</a>
+                    </div>
+                </div>
+
+                <div class="event-item" data-category="workshop">
+                    <div class="event-date">
+                        <span class="day">18</span>
+                        <span class="month">Sept</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="event-details">
+                        <h3>Atelier numérique pour seniors</h3>
+                        <div class="event-meta">
+                            <p><i class="fas fa-map-marker-alt"></i> Médiathèque, 23 rue des Arts</p>
+                            <p><i class="fas fa-clock"></i> 14h00 - 16h00</p>
+                            <p><i class="fas fa-tag"></i> Atelier, Formation</p>
+                        </div>
+                        <div class="event-description">
+                            <p>Initiation aux outils numériques pour les seniors. Cet atelier pratique permettra aux participants de se familiariser avec l'utilisation d'un ordinateur, la navigation sur internet et l'utilisation des services en ligne essentiels.</p>
+                            <p>Matériel fourni. Places limitées à 12 participants. Gratuit sur inscription.</p>
+                        </div>
+                        <a href="#" class="btn register-btn" data-event="Atelier numérique pour seniors">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-registration">
+        <div class="container">
+            <div class="registration-form-container" id="registration-form-container">
+                <h2>Inscription à l'événement</h2>
+                <form id="event-registration-form">
+                    <input type="hidden" id="event-name" name="event-name" value="">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="participants">Nombre de participants</label>
+                        <select id="participants" name="participants">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message (optionnel)</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Confirmer l'inscription</button>
+                        <button type="button" class="btn btn-outline" id="cancel-registration">Annuler</button>
+                    </div>
+                </form>
+                <div id="registration-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="past-events">
+        <div class="container">
+            <h2 class="section-title">Événements passés</h2>
+            <div class="past-events-gallery">
+                <div class="past-event-item">
+                    <img src="images/past-event1.jpg" alt="Journée de plantation d'arbres" id="placeholder-past1">
+                    <div class="past-event-overlay">
+                        <h3>Journée de plantation d'arbres</h3>
+                        <p>Mars 2025</p>
+                        <a href="#" class="btn btn-small">Voir les photos</a>
+                    </div>
+                </div>
+                <div class="past-event-item">
+                    <img src="images/past-event2.jpg" alt="Forum des associations" id="placeholder-past2">
+                    <div class="past-event-overlay">
+                        <h3>Forum des associations</h3>
+                        <p>Février 2025</p>
+                        <a href="#" class="btn btn-small">Voir les photos</a>
+                    </div>
+                </div>
+                <div class="past-event-item">
+                    <img src="images/past-event3.jpg" alt="Conférence sur le climat" id="placeholder-past3">
+                    <div class="past-event-overlay">
+                        <h3>Conférence sur le climat</h3>
+                        <p>Janvier 2025</p>
+                        <a href="#" class="btn btn-small">Voir les photos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Nom de l'Association</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Association, 75000 Paris</p>
+                    <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@association.fr</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="activities.html">Activités</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nom de l'Association. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

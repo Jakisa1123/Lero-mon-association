@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association - Galerie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Nom de l'Association</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="activities.html">Activités</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="#" class="active">Galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Notre Galerie</h1>
+            <p>Découvrez nos activités et événements en images</p>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="events">Événements</button>
+                <button class="filter-btn" data-filter="activities">Activités</button>
+                <button class="filter-btn" data-filter="projects">Projets</button>
+                <button class="filter-btn" data-filter="team">Équipe</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="images/gallery1.jpg" alt="Journée portes ouvertes" id="placeholder-gallery1">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Journée portes ouvertes</h3>
+                                <p>Mai 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-image">
+                        <img src="images/gallery2.jpg" alt="Atelier éducatif" id="placeholder-gallery2">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Atelier éducatif</h3>
+                                <p>Juin 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <div class="gallery-image">
+                        <img src="images/gallery3.jpg" alt="Projet environnemental" id="placeholder-gallery3">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Nettoyage de la rivière</h3>
+                                <p>Juillet 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-image">
+                        <img src="images/gallery4.jpg" alt="Réunion d'équipe" id="placeholder-gallery4">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Réunion d'équipe</h3>
+                                <p>Août 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="images/gallery5.jpg" alt="Concert solidaire" id="placeholder-gallery5">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Concert solidaire</h3>
+                                <p>Septembre 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-image">
+                        <img src="images/gallery6.jpg" alt="Distribution alimentaire" id="placeholder-gallery6">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Distribution alimentaire</h3>
+                                <p>Octobre 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="projects">
+                    <div class="gallery-image">
+                        <img src="images/gallery7.jpg" alt="Jardin partagé" id="placeholder-gallery7">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Jardin partagé</h3>
+                                <p>Novembre 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <div class="gallery-image">
+                        <img src="images/gallery8.jpg" alt="Formation des bénévoles" id="placeholder-gallery8">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Formation des bénévoles</h3>
+                                <p>Décembre 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-image">
+                        <img src="images/gallery9.jpg" alt="Fête de fin d'année" id="placeholder-gallery9">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Fête de fin d'année</h3>
+                                <p>Décembre 2024</p>
+                            </div>
+                            <div class="gallery-icon">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+            <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title">Nos vidéos</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-thumbnail" id="placeholder-video1">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Présentation de l'association</h3>
+                        <p>Découvrez notre association et nos missions en vidéo.</p>
+                    </div>
+                </div>
+                <div class="video-item">
+                    <div class="video-thumbnail" id="placeholder-video2">
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Témoignages de bénéficiaires</h3>
+                        <p>Écoutez les témoignages de personnes ayant bénéficié de nos actions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Partagez vos photos avec nous</h2>
+                <p>Vous avez participé à l'un de nos événements ? Envoyez-nous vos photos pour enrichir notre galerie !</p>
+                <a href="contact.html" class="btn">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Nom de l'Association</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Rue de l'Association, 75000 Paris</p>
+                    <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@association.fr</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="activities.html">Activités</a></li>
+                        <li><a href="events.html">Événements</a></li>
+                        <li><a href="gallery.html">Galerie</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nom de l'Association. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
